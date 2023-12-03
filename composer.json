@@ -14,7 +14,8 @@
     "require": {
         "php": "^8.2",
         "lambdish/phunctional": "^2.1",
-        "symfony/dotenv": "*"
+        "symfony/dotenv": "*",
+        "ext-ctype": "*"
     },
     "config": {
         "vendor-dir": "vendor"

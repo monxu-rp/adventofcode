@@ -1,6 +1,6 @@
-<!----><?php
+<?php
 
-require __DIR__ . '/../support.php';
+require __DIR__ . '/../../support.php';
 
 $lines = getInputForDay(2);
 
