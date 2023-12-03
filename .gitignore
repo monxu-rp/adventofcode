@@ -1,0 +1,5 @@
+.env
+.idea/
+/vendor/
+/data/
+docker/.DS_Store

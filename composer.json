@@ -1,0 +1,22 @@
+{
+    "name": "monxu/adventofcode",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ramon Puiggené Brecha",
+            "email": "ramonpuiggene@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "lambdish/phunctional": "^2.1",
+        "symfony/dotenv": "*"
+    },
+    "config": {
+        "vendor-dir": "vendor"
+    }
+}
