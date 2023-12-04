@@ -17,19 +17,19 @@
 <nav>
     <ul class="file-list">
         <?php
-        function listFolder($directorio) {
-            $content = scandir($directorio);
+        function listFolder($path) {
+            $content = scandir($path);
 
             echo '<ul>';
             foreach ($content as $item) {
                 if ($item != '.' && $item != '..') {
-                    $fullPath = $directorio . '/' . $item;
+                    $fullPath = $path . '/' . $item;
                     echo '<li>';
                     if (is_dir($fullPath)) {
                         echo '<strong>' . $item . '</strong>';
                         listFolder($fullPath);
                     } else {
-                        echo '<a href="' . $fullPath . '">' . $item . '</a>';
+                        echo '<a href="#">' . $item . '</a>';
                     }
                     echo '</li>';
                 }
