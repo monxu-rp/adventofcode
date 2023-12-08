@@ -15,6 +15,9 @@ function execute($path, $maps): int
     $current = [];
 
     foreach ($map as $line) {
+        if (empty($line)) {
+            continue;
+        }
         preg_match('/([A-Z\d]{3}) = \(([A-Z\d]{3}), ([A-Z\d]{3})\)/', $line, $matches);
         [, $from, $left, $right] = $matches;
 
